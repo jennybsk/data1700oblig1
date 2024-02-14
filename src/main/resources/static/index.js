@@ -10,6 +10,10 @@ function kjøpAvBillett() {
     const telefonnr = document.getElementById("telefonnr").value;
     const epost = document.getElementById("epost").value;
 
+    if (antall === "" || isNaN(antall) || parseInt(antall) <= 0) {
+        document.getElementById("ugyldigAntall").innerHTML="Ugyldig, må fylle inn antall";
+    }
+
     if(isNaN(telefonnr)){
         document.getElementById("ikkeNummer").innerHTML="Ugyldig, telefonnr må bestå av nummer";
     }

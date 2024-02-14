@@ -20,11 +20,15 @@
 </select><br><br>
 
 <!--Input-bokser for bestilling av antall kinobillett + person info-->
-<label for="antall">Antall</label>
-<input type="text" id="antall"><br><br>
-<span id="feil-antall" style="color: red" class="feil-melding"></span><br>
-
 <table>
+  <tr>
+    <td>Antall</td>
+    <td><input type="text" id="antall"></td>
+    <td>
+      <div id="ugyldigAntall" style="color: red"></div>
+    </td>
+  </tr>
+
   <tr>
     <td>Fornavn</td>
     <td><input type="text" id="fornavn"></td>
