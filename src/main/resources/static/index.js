@@ -1,17 +1,6 @@
 // Oppretter array for billettregister
 const kinobillettRegister=[];
 
-// Funksjon for valg av film
-/*function VelgFilmer() {
-    ut += "FilmValg : " + document.getElementById("filmer").value;
-}
-
-// Funksjon for antall billetter
-function Antall() {
-    document.getElementById("Antall").value;
-    }
- */
-
 // Funksjon for kjøp av billett
 function kjøpAvBillett() {
     const film = document.getElementById("filmer").value;
