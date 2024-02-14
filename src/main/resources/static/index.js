@@ -56,6 +56,11 @@ function visKinobillettRegister() {
         ut += "<td>" + r.film + "</td><td>" + r.antall + "</td><td>" + r.fornavn + "</td><td>" + r.etternavn + "</td><td>" + r.telefonnr + "</td><td>" + r.epost + "</td>";
         ut += "</tr>";
     }
-
     document.getElementById("kinobillettRegister").innerHTML = ut;
+}
+
+// Funksjon for å tømme arrayet for all registrert info
+function slettAlle() {
+    kinobillettRegister.length = 0;
+    visKinobillettRegister();
 }
