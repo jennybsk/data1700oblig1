@@ -25,10 +25,37 @@
 <span id="feil-antall" style="color: red" class="feil-melding"></span><br>
 
 <table>
-  <tr><td>Fornavn</td><td><input type="text" id="fornavn"></td><td><span id="feil-fornavn" style="color: red" class="feil-melding"></span></td><tr>
-  <tr><td>Etternavn</td><td><input type="text" id="etternavn"></td><td><span id="feil-etternavn" style="color: red" class="feil-melding"></span></td><tr>
-  <tr><td>Telefonnr</td><td><input type="text" id="telefonnr"></td><td><span id="feil-telefonnr" style="color: red" class="feil-melding"></span></td><tr>
-  <tr><td>Epost</td><td><input type="text" id="epost"></td><td><span id="feil-epost" style="color: red" class="feil-melding"></span></td><tr>
+  <tr>
+    <td>Fornavn</td>
+    <td><input type="text" id="fornavn"></td>
+    <td>
+      <div id="ugyldigFornavn" style="color: red"></div>
+    </td>
+  </tr>
+
+  <tr>
+    <td>Etternavn</td>
+    <td><input type="text" id="etternavn"></td>
+    <td>
+      <div id="ugyldigEtternavn" style="color: red"></div>
+    </td>
+  </tr>
+
+  <tr>
+    <td>Telefonnr</td>
+    <td><input type="text" id="telefonnr"></td>
+    <td>
+      <div id="ikkeNummer" style="color: red"></div>
+    </td>
+  </tr>
+
+  <tr>
+    <td>Epost</td>
+    <td><input type="text" id="epost"></td>
+    <td>
+      <div id="ugyldigEpost" style="color: red"></div>
+    </td>
+  </tr>
 </table>
 
 <!--Kjøp billett knapp-->

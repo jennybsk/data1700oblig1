@@ -10,20 +10,39 @@ function kjøpAvBillett() {
     const telefonnr = document.getElementById("telefonnr").value;
     const epost = document.getElementById("epost").value;
 
-    const registrert = {
-        film : film,
-        antall : antall,
-        fornavn : fornavn,
-        etternavn : etternavn,
-        telefonnr : telefonnr,
-        epost : epost
-    };
+    if(isNaN(telefonnr)){
+        document.getElementById("ikkeNummer").innerHTML="Ugyldig, telefonnr må bestå av nummer";
+    }
 
-    // Registrerer den nye infoen i arrayet
-    kinobillettRegister.push(registrert);
+    if (fornavn.trim() === "") {
+        document.getElementById("ugyldigFornavn").innerHTML="Ugyldig, må fylle inn fornavn";
+    }
 
-    // Viser den nye infoen i arrayet
-    visKinobillettRegister()
+    if (etternavn.trim() === "") {
+        document.getElementById("ugyldigEtternavn").innerHTML="Ugyldig, må fylle inn etternavn";
+    }
+
+    if (!epost.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(epost)) {
+        document.getElementById("ugyldigEpost").innerHTML ="Ugyldig e-postadresse";
+    }
+
+    else {
+
+        const registrert = {
+            film: film,
+            antall: antall,
+            fornavn: fornavn,
+            etternavn: etternavn,
+            telefonnr: telefonnr,
+            epost: epost
+        };
+
+        // Registrerer den nye infoen i arrayet
+        kinobillettRegister.push(registrert);
+
+        // Viser den nye infoen i arrayet
+        visKinobillettRegister()
+
 
     // Sletter info fra input-boksene
     document.getElementById("filmer").value="";
@@ -33,7 +52,7 @@ function kjøpAvBillett() {
     document.getElementById("telefonnr").value="";
     document.getElementById("epost").value="";
 }
-
+}
 
 // Skriver ut array med registrerte
 function visKinobillettRegister() {
