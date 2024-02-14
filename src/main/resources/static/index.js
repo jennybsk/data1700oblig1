@@ -25,11 +25,11 @@ function kjøpAvBillett() {
         document.getElementById("ikkeNummer").innerHTML="Ugyldig, telefonnr må bestå av 8 siffer";
     }
 
-    if (fornavn.trim() === "") {
+    if (fornavn.length === 0) {
         document.getElementById("ugyldigFornavn").innerHTML="Ugyldig, må fylle inn fornavn";
     }
 
-    if (etternavn.trim() === "") {
+    if (etternavn.length === 0) {
         document.getElementById("ugyldigEtternavn").innerHTML="Ugyldig, må fylle inn etternavn";
     }
 
