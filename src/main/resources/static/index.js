@@ -53,7 +53,7 @@ function visKinobillettRegister() {
         "</tr>";
     for (let r of kinobillettRegister) {
         ut += "<tr>";
-        ut += "<td>" + r.Film + "</td><td>" + r.Antall + "</td><td>" + r.Fornavn + "</td><td>" + r.Etternavn + "</td><td>" + r.Telefonnr + "</td><td>" + r.Epost + "</td>";
+        ut += "<td>" + r.film + "</td><td>" + r.antall + "</td><td>" + r.fornavn + "</td><td>" + r.etternavn + "</td><td>" + r.telefonnr + "</td><td>" + r.epost + "</td>";
         ut += "</tr>";
     }
 
